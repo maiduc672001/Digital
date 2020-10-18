@@ -14,4 +14,5 @@ public class QuestionDTO {
     private String courseTitle;
     private Integer numberorder;
     private Integer youranswer;
+    private String image;
 }

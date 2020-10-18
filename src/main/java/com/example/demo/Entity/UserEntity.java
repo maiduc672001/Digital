@@ -18,6 +18,8 @@ public class UserEntity {
     private String password;
 @Column(name = "fullname")
 private String fullname;
+@Column(name = "email")
+private String email;
 @ManyToOne
     @JoinColumn(name = "roleid")
     private RoleEntity roleEntity;

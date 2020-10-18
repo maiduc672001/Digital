@@ -23,6 +23,8 @@ public class QuestionEntity {
     private String option4;
     @Column(name = "answer")
     private Integer answer;
+    @Column(name = "image")
+    private String image;
     @ManyToOne
     @JoinColumn(name = "courseid")
     private CourseEntity courseEntity;

@@ -61,7 +61,7 @@ public class ResultService {
             }
         }
         UserPrincipal principal= UserUtil.getUserPrincipal();
-        UserEntity user=userRepository.findByUsername(principal.getUsername());
+//        UserEntity user=userRepository.findByUsername(principal.getUsername());
         ResultEntity resultEntity=resultRepository.getByUserEntityAndCourseEntity(userEntity,courseEntity);
         if(resultEntity==null){
             resultEntity=new ResultEntity();
